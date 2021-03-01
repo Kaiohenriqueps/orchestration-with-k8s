@@ -1,0 +1,25 @@
+a) Baixar os instaladores que estão disponíveis na área de downloads desta aula.
+
+b) Vamos criar um diretório chamado apps dentro do diretório home do usuário e dentro deste criar um díretório
+chamado kube e então colocar o executável do kubectl aqui dentro.
+
+c) Vamos adicionar o caminho para o executável do kubectl no path do sistema.
+
+	Note: Docker Desktop for Windows adds its own version of kubectl to PATH. If you have installed Docker Desktop before, you may need to place your PATH entry before the one added by the Docker Desktop installer or remove the Docker Desktop's kubectl.
+
+d) Vamos testar o comando no terminal para ver se está funcionando normalmente:
+
+	kubectl version --client
+
+e) Vamos Executar o instalador do Minikube
+
+	OBS: Se necessário, reiniciar o computador
+
+f) Configurar o docker como driver padrão (container runtime) para o Kubernetes 
+
+	minikube config set driver docker
+
+g) Inicializar um cluster
+
+	minikube start 
+
