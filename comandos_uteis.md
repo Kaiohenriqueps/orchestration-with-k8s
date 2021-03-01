@@ -34,3 +34,12 @@ $ kubectl apply -f deployments/dp.yaml
 ```
 $ kubectl rollout undo deployment/nome-deployment
 ```
+## Rollout para uma versão específica:
+```
+$ kubectl rollout undo deployment/nome-deployment --to-revision=x
+```
+## Histórico dos rollouts:
+Obs: para que possamos ter um rastreamento precisamos colocar a opção de *--record* para conseguirmos visualizar na listagem.
+```
+$ kubectl rollout history deployment/nome-deployment
+```
