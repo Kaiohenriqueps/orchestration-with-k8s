@@ -43,3 +43,17 @@ Obs: para que possamos ter um rastreamento precisamos colocar a opção de *--re
 ```
 $ kubectl rollout history deployment/nome-deployment
 ```
+
+## Entrando em um pod
+```
+$ kubectl exec -it <nome_pod> -- bash
+```
+Dentro do pod podemos se conectar, por exemplo, à uma app de mysql que foi feito o deploy na mesma rede com o seguinte comando:
+```
+$ mysql -h <ip> -uroot -p<password> <database>
+```
+* No caso do exemplo, foi preciso rodar os seguintes comandos:
+```
+$ apt update
+$ apt install default-mysql-client -y
+```
