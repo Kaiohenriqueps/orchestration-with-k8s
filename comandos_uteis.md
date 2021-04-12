@@ -74,3 +74,10 @@ $ apt install dnsutils -y
 $ nslookup kubernetes
 ```
 Irá aparecer uma chave com o nome *Name*. Caso não o serviço não seja encontrado, usamos o FQDN para encontrar o serviço.
+
+## SERVIÇOS
+
+### Encontrando URL do seu serviço
+```
+$ minikube service <nome_servico> --url
+```
