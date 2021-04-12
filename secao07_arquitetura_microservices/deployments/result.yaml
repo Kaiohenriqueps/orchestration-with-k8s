@@ -15,7 +15,7 @@ spec:
         app: result
     spec:
       containers:
-        - image: dockersamples/examplevotingapp_result:before
+        - image: kodekloud/examplevotingapp_result:v1
           name: result
           resources:
             limits:
