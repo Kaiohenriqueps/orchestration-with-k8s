@@ -6,6 +6,10 @@
 ```
 $ kubectl create -f arquivo.yaml
 ```
+Dá para criar vários recursos de uma vez só, caso os arquivos estejam em uma pasta só:
+```
+$ kubectl create -f pasta_dos_arquivos/
+```
 ### Listando recursos: 
 ```
 $ kubect get {pods,replicaset,deployment}
